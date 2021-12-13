@@ -5,78 +5,106 @@
     font-family: 'Oswald', sans-serif;
 }
 
-header {
-    background-color: black;
-    padding-left: 50px;
-    overflow: hidden;
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
 }
 
-.headers nav ul {
-    float: right;
-    margin-top: 100px;
-    padding-right: 390px;
+/*INICIO*/
+
+header {
+    grid-area: header;
+}
+
+.color-nav {
+    background-color: black;
+}
+
+.color-nav li { 
+    transition: all .5s ease;
+    margin: 0 20px;
+}
+
+.color-nav li:hover {
+    transform: scale(1.5);
 }
     
-.headers nav ul li {
-    display: inline-block;
+li a:hover {
+    text-decoration: underline #5efd01d0;
 }
 
-.headers ul li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    padding: 10px;
+@keyframes entrada {
+    0% {
+        transform: translateX(300vh);
+    }
+
+    100% {
+        transform: translateX(0vh);
+    }
+    
 }
 
-.headers li {
-    font-size:large;
-}
- /*INICIO*/
-.seccion-principal-uno {
-padding: 50px;
+.icono-nav img {
+    animation-name: entrada;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 
-.primer-parrafo-principal {
-    margin-bottom: 30px;
+main {
+    grid-area: main;
 }
 
-.primer-parrafo-principal h1 {
-    font-size: 40px;
+.seccion-principal {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 100px;
 }
 
-.primer-parrafo-principal img {
-    width: 400px;
+h1 {
+    display: flex;
+    justify-content: start;
+    padding: 20px 0 20px 20px;
+}
+
+.seccion-principal p {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10px 0 20px;
+    line-height: 25px;
+}
+
+.seccion-principal img {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    padding: 0 20px 0px 20px;
+}
+
+.seccion-secundaria {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 100px;
+}
+
+.seccion-secundaria img {
+    width: 100%;
+    max-width: 100%;
     height: 200px;
-    float: right;
-    margin-left: 10px
+    padding: 0 20px 0 20px;
 }
 
-.primer-parrafo-principal p {
-    text-align:left;
-    margin-top: 30px;
-    margin-right: 10px;
-}
-
-.contenedor div {
-    padding: 20px;
-}
-
-
-.primer-parrafo-secundario {
-    float: right;
+.seccion-secundaria p {
     text-align: center;
 }
 
-
-.segundo-parrafo.secundario {
-    float: left;
-    text-align: center;
-}
 
 .footers {
     background-color: black;
-    padding-bottom: 40px; 
     color: white;
 }
 
@@ -97,59 +125,48 @@ padding: 50px;
 
 .footers li {
     display:inline-block ;
+    transition: all .5s ease;
+    margin: 5px;
 }
+
+.footers li:hover {
+    transform: scale(1.5);
+}
+
 /*INSTALACIONES*/
 
-.primer-parrafo-instalaciones {
-    padding: 20px;
-}
-
-.primer-parrafo-instalaciones h2 {
+.instalaciones-sector h2 {
     text-align: center;
-    font-size: 40px;
+    margin: 20px 10px 20px 10px;
 }
 
-.segundo-contenedor div {
-    padding: 20px;
+.card img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
 }
 
-
-.primer-caja {
-float: right;
+.servicios-sector {
+    margin: 50px 20px 50px 20px;
 }
 
-.segunda-caja{
-float: left;
+.servicios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
 }
 
-.tercer-caja {
-text-align: center;
+.servicios-contenedor p {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 28px;
 }
 
-.segundo-parrafo-instalaciones {
-    padding: 30px;
-    margin-bottom: 50px;
-}
-
-.tercer-contenedor {
-    padding-bottom: 60px;
-}
-
-.tercer-contenedor h2 {
-    font-size: 25px;
-}
-
-.tercer-contenedor img {
-    width: 400px;
-    height: 200px;
-    float: right;
-    margin-left: 10px;
-}
-
-.tercer-contenedor p {
-    text-align:left;
-    margin-top: 30px;
-    margin-right: 10px;
+.servicios-contenedor img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
 }
 
 /*TORNEOS*/
@@ -252,3 +269,62 @@ form {
     float:right;
     padding: 5px;
     }
+
+    /*media------querie*/
+
+
+@media screen and (max-width:768px) {
+
+    /*INICIO*/
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .seccion-principal {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .seccion-principal p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        order: 2;
+        margin-top: 10px;
+        line-height: 20px;
+    }
+
+    .seccion-secundaria {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    .seccion-secundaria p {
+        text-align: center;
+        line-height: 20px;
+    }
+
+    /*INSTALACIONES*/
+
+    .servicios-sector h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicios-contenedor  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicios-contenedor p {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        line-height: 22px;
+    }
+}

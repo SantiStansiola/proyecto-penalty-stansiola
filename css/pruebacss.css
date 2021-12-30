@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+/*INICIO*/
+header {
+  grid-area: header;
+}
+
+header .color-nav {
+  background-color: black;
+}
+
+header .color-nav li {
+  transition: all .5s ease;
+  margin: 0 20px;
+}
+
+header .color-nav li:hover {
+  transform: scale(1.5);
+}
+
+header .color-nav li a:hover {
+  text-decoration: underline #5efd01d0;
+}
+
+@keyframes entrada {
+  0% {
+    transform: translateX(300vh);
+  }
+
+  100% {
+    transform: translateX(0vh);
+  }
+}
+
+header .color-nav .icono-nav img {
+  animation-name: entrada;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+/*INICIO*/
+main {
+  grid-area: main;
+  background-color: white;
+}
+
+main .secciones-inicio h1 {
+  display: flex;
+  justify-content: start;
+  padding: 20px 20px 20px 20px;
+  font-size: 2em;
+}
+
+main .secciones-inicio .seccion-principal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 100px;
+  grid-gap: 20px;
+}
+
+main .secciones-inicio .seccion-principal p {
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  padding: 5px 5px 5px 20px;
+  line-height: 1.7em;
+}
+
+main .secciones-inicio .seccion-principal img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  padding: 5px 20px 5px 5px;
+}
+
+main .seccion-secundaria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+main .seccion-secundaria img {
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  padding: 0 20px 0 20px;
+}
+
+main .seccion-secundaria p {
+  text-align: center;
+}
+
+/*INSTALACIONES*/
+main .instalaciones-sector h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 10px 20px 10px;
+}
+
+main .instalaciones-sector .card img {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+}
+
+main .servicios-sector {
+  margin: 50px 20px 50px 20px;
+}
+
+main .servicios-sector h2 {
+  display: flex;
+  justify-content: start;
+}
+
+main .servicios-sector .servicios-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
+main .servicios-sector .servicios-contenedor p {
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 1.7em;
+}
+
+main .servicios-sector .servicios-contenedor img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+}
+
+/*TORNEOS*/
+main h3 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+main .carrusel-torneo {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  background-color: black;
+  margin: 10px;
+}
+
+main .carrusel-torneo img {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  padding: 10px;
+}
+
+main .info-sobre-torneo {
+  background-color: white;
+  margin: 40px 0 40px 0;
+}
+
+/*SOBRE NOSOTROS*/
+main .sobre-nosotros {
+  margin: 30px;
+}
+
+main .sobre-nosotros .encabezado-nosotros {
+  display: flex;
+  align-items: center;
+}
+
+main .sobre-nosotros .encabezado-nosotros p {
+  text-align: center;
+}
+
+main .sobre-nosotros .quienes-somos {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*CONTACTOS*/
+main .contenedor-forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+main .contenedor-forms .contacto {
+  color: black;
+  width: 50%;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 black;
+  margin: 30px;
+}
+
+main .contenedor-forms .contacto h4 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+main .contenedor-forms .contacto .elementos-forms {
+  margin: 45px;
+}
+
+main .contenedor-forms .contacto .elementos-forms input,
+main .contenedor-forms .contacto .elementos-forms textarea {
+  color: black;
+  font-size: 15px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+main .contenedor-forms .contacto .button-forms button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+/*Footers*/
+.footers p {
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+
+.footers img {
+  width: 30px;
+  height: 30px;
+}
+
+.footers ul {
+  text-align: center;
+}
+
+.footers li {
+  display: inline-block;
+  transition: all .5s ease;
+  margin: 5px;
+}
+
+.footers li:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 768px) {
+
+  /*INICIO*/
+  main .secciones-inicio h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  main .secciones-inicio .seccion-principal {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  main .secciones-inicio .seccion-principal p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 0px 5px 0px 5px;
+  }
+
+  main .secciones-inicio .seccion-principal img {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 20px 5px 20px;
+  }
+
+  main .seccion-secundaria {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+  }
+
+  main .seccion-secundaria p {
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+  }
+
+  main .seccion-secundaria img {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 20px 5px 20px;
+  }
+
+  /*INSTALACIONES*/
+  main .servicios-sector {
+    margin: 25px 20px 25px 20px;
+  }
+
+  main .servicios-sector h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  main .servicios-sector .servicios-contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .servicios-sector .servicios-contenedor p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  /*TORNEOS*/
+  main .carrusel-torneo {
+    margin: 5px;
+  }
+
+  main .carrusel-torneo img {
+    height: 250px;
+    padding: 5px;
+  }
+
+  /*SOBRE NOSOTROS*/
+  main .sobre-nosotros .quienes-somos {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  main .sobre-nosotros .quienes-somos img {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+  }
+
+  main .sobre-nosotros .quienes-somos iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+  }
+
+  /*CONTACTO*/
+  main .contenedor-forms .contacto {
+    width: 70%;
+  }
+}

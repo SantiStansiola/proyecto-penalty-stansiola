@@ -1,0 +1,27 @@
+{
+  "name": "proyecto-penalty-stansiola",
+  "version": "1.0.0",
+  "description": "Pre entregas de proyecto final de coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-bootstrap": "node-sass --include-path scss scss/bootstrap/bootstrap.scss css/bootstrap.css",
+    "watch-bootstrap": "nodemon -e scss -x \"npm run build-bootstrap\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiStansiola/proyecto-penalty-stansiola.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantiStansiola/proyecto-penalty-stansiola/issues"
+  },
+  "homepage": "https://github.com/SantiStansiola/proyecto-penalty-stansiola#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

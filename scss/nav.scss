@@ -1,0 +1,47 @@
+/*INICIO*/
+
+header {
+    grid-area: header;
+    .color-nav {
+        background-color: black;
+        li { 
+            transition: all .5s ease;
+            margin: 0 20px;
+            &:hover{
+                transform: scale(1.5);
+            }
+            a{
+                &:hover{
+                    text-decoration: underline #5efd01d0;
+                }
+            }
+        }
+        @keyframes entrada {
+            0% {
+                transform: translateX(300vh);
+            }
+        
+            100% {
+                transform: translateX(0vh);
+            }
+            
+        }
+        .icono-nav{
+            img {
+                animation-name: entrada;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -140,10 +140,6 @@ address {
   line-height: inherit; }
 
 ol,
-ul {
-}
-
-ol,
 ul,
 dl {
   margin-top: 0;
@@ -5983,7 +5979,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color:black!important; }
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity))!important; }
 
 .bg-black {
   --bs-bg-opacity: 1;

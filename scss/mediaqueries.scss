@@ -1,49 +1,58 @@
 @media screen and (max-width:768px) {
-
     /*INICIO*/
     
     main{
-        .secciones-inicio {
-            h1 {
-                display: flex;
-                justify-content: center;
-            }
-            .seccion-principal{
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 15px;
-                p {
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    line-height: 1.5em;
-                    padding: 0px 5px 0px 5px;
-                }
-                img {
-                    width: 100%;
-                    max-width: 100%;
-                    padding: 5px 20px 5px 20px;
+        .secciones-inicio{
+            .imagen-principal{
+                .contenido-imagen{
+                    h3{
+                        color: #fff;
+                        font-size:5em;
+                        margin-top:2.7em;
+                    }
+                    .link-instalaciones{
+                        margin-top: 4em;
+                    }
+                img{
+                    height: 80vh;
                 }
             }
         }
-        .seccion-secundaria {
-            display: flex;
-            flex-direction: column;
-            grid-gap: 5px;
-            p {
-                align-items: center;
-                padding: 0px 20px 0px 20px;
+    }
+        .secciones-secu-inicio{
+            h1{
+                font-size: 2.5em;
             }
-            img{
-                width: 100%;
-                max-width: 100%;
-                padding: 5px 20px 5px 20px;
+            .imagenes-secundaria {
+                img {
+                    height: 350px;
+                }
+                p {
+                    margin: .7em;
+                }
+            }
+        }
+    }
+
+/*Footers*/
+
+    footer{
+        .footers{
+            grid-gap: 1.7em;
+            .horarios-footers{
+                ul{
+                    margin: 2em;
+                }    
+                li{
+                    margin: 2em;
+                    font-size: .9em;
+                }
             }
         }
     }
 
     /*INSTALACIONES*/
-    
+
     main{
         .servicios-sector{
             margin: 25px 20px 25px 20px;
@@ -113,3 +122,101 @@
 
 
 
+@media screen and (max-width:425px) {
+    main {
+        .secciones-inicio{
+            .imagen-principal{
+                .contenido-imagen{
+                    h3{
+                        font-size: 2em;
+                        margin-top:4.5em;
+                        }
+                    .link-instalaciones{
+                        margin-top:1.7em;
+                        a{
+                            font-size:.7em;
+                            padding: 1em 1.5em 1em 1.5em;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                img{
+                    height: 54vh;
+                }
+            }
+        }
+        .secciones-secu-inicio{
+            margin: 2em 2em 2em 2em;
+                h1{
+                    font-size: 2em;
+                    margin-bottom: .5em;
+                    }
+                .imagenes-secundaria {
+                    display: flex;
+                    flex-flow: column;
+                    grid-gap: 1.5em;
+                        img {
+                            height: 200px;
+                        }
+                        p {
+                            margin: 1em;
+                            font-size: 0.7em;
+                        }
+                    }
+                }
+            }
+    
+    /*Footers*/
+
+    footer{
+        .footers{
+            grid-template-columns:none;
+            grid-gap: 0em;
+            .horarios-footers{
+                margin:.5em 1em .5em 1em;
+                h5{
+                    font-size: 1em;
+                }
+                ul{
+                    margin: 1em;
+                }    
+                li{
+                    display: block;
+                    margin: 1.5em;
+                    color: white;
+                    font-size: 1em;
+                    font-weight: 300;
+                }
+            }
+            .redes-footers{
+                margin: .5em 1em .5em 1em;
+                h5{
+                    color: white;
+                    text-align: center;
+                }
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+                ul {
+                    text-align: center;
+                    margin:1em;
+                }
+                li {
+                    display:block ;
+                    transition: all .5s ease;
+                    margin:1em;
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+        p{
+            text-align: center;
+            font-size: .7em;
+            font-weight: 200;
+            color: white;
+        }
+    }
+}

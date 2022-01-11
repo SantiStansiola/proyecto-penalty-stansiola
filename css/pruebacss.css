@@ -51,9 +51,9 @@ main {
       main .imagen-principal .contenido-imagen h3 {
         color: #fff;
         font-size: 5em;
-        margin-top: 2.5em; }
+        margin-top: 3em; }
       main .imagen-principal .contenido-imagen .link-instalaciones {
-        margin-top: 6.5em; }
+        margin-top: 3.5em; }
         main .imagen-principal .contenido-imagen .link-instalaciones a {
           border: solid #fff 1px;
           color: #fff;
@@ -69,7 +69,7 @@ main {
     main .imagen-principal img {
       width: 100%;
       max-width: 100%;
-      height: 84vh; }
+      height: 90vh; }
   main .secciones-secu-inicio {
     margin: 2.5em 2.5em 2.5em 2.5em; }
     main .secciones-secu-inicio h1 {
@@ -238,34 +238,28 @@ footer p {
 
 @media screen and (max-width: 768px) {
   /*INICIO*/
-  main .secciones-inicio h1 {
-    display: flex;
-    justify-content: center; }
-  main .secciones-inicio .seccion-principal {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px; }
-    main .secciones-inicio .seccion-principal p {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      line-height: 1.5em;
-      padding: 0px 5px 0px 5px; }
-    main .secciones-inicio .seccion-principal img {
-      width: 100%;
-      max-width: 100%;
-      padding: 5px 20px 5px 20px; }
-  main .seccion-secundaria {
-    display: flex;
-    flex-direction: column;
-    grid-gap: 5px; }
-    main .seccion-secundaria p {
-      align-items: center;
-      padding: 0px 20px 0px 20px; }
-    main .seccion-secundaria img {
-      width: 100%;
-      max-width: 100%;
-      padding: 5px 20px 5px 20px; }
+  main .secciones-inicio .imagen-principal .contenido-imagen h3 {
+    color: #fff;
+    font-size: 5em;
+    margin-top: 2.7em; }
+  main .secciones-inicio .imagen-principal .contenido-imagen .link-instalaciones {
+    margin-top: 4em; }
+  main .secciones-inicio .imagen-principal .contenido-imagen img {
+    height: 80vh; }
+  main .secciones-secu-inicio h1 {
+    font-size: 2.5em; }
+  main .secciones-secu-inicio .imagenes-secundaria img {
+    height: 350px; }
+  main .secciones-secu-inicio .imagenes-secundaria p {
+    margin: .7em; }
+  /*Footers*/
+  footer .footers {
+    grid-gap: 1.7em; }
+    footer .footers .horarios-footers ul {
+      margin: 2em; }
+    footer .footers .horarios-footers li {
+      margin: 2em;
+      font-size: .9em; }
   /*INSTALACIONES*/
   main .servicios-sector {
     margin: 25px 20px 25px 20px; }
@@ -303,3 +297,68 @@ footer p {
   /*CONTACTO*/
   main .contenedor-forms .contacto {
     width: 70%; } }
+
+@media screen and (max-width: 425px) {
+  main .secciones-inicio .imagen-principal .contenido-imagen h3 {
+    font-size: 2em;
+    margin-top: 4.5em; }
+  main .secciones-inicio .imagen-principal .contenido-imagen .link-instalaciones {
+    margin-top: 1.7em; }
+    main .secciones-inicio .imagen-principal .contenido-imagen .link-instalaciones a {
+      font-size: .7em;
+      padding: 1em 1.5em 1em 1.5em;
+      font-weight: 500; }
+  main .secciones-inicio .imagen-principal img {
+    height: 54vh; }
+  main .secciones-secu-inicio {
+    margin: 2em 2em 2em 2em; }
+    main .secciones-secu-inicio h1 {
+      font-size: 2em;
+      margin-bottom: .5em; }
+    main .secciones-secu-inicio .imagenes-secundaria {
+      display: flex;
+      flex-flow: column;
+      grid-gap: 1.5em; }
+      main .secciones-secu-inicio .imagenes-secundaria img {
+        height: 200px; }
+      main .secciones-secu-inicio .imagenes-secundaria p {
+        margin: 1em;
+        font-size: 0.7em; }
+  /*Footers*/
+  footer .footers {
+    grid-template-columns: none;
+    grid-gap: 0em; }
+    footer .footers .horarios-footers {
+      margin: .5em 1em .5em 1em; }
+      footer .footers .horarios-footers h5 {
+        font-size: 1em; }
+      footer .footers .horarios-footers ul {
+        margin: 1em; }
+      footer .footers .horarios-footers li {
+        display: block;
+        margin: 1.5em;
+        color: white;
+        font-size: 1em;
+        font-weight: 300; }
+    footer .footers .redes-footers {
+      margin: .5em 1em .5em 1em; }
+      footer .footers .redes-footers h5 {
+        color: white;
+        text-align: center; }
+      footer .footers .redes-footers img {
+        width: 30px;
+        height: 30px; }
+      footer .footers .redes-footers ul {
+        text-align: center;
+        margin: 1em; }
+      footer .footers .redes-footers li {
+        display: block;
+        transition: all .5s ease;
+        margin: 1em; }
+        footer .footers .redes-footers li:hover {
+          transform: scale(1.5); }
+  footer p {
+    text-align: center;
+    font-size: .7em;
+    font-weight: 200;
+    color: white; } }

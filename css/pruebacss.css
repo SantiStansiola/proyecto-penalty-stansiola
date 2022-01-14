@@ -51,9 +51,9 @@ main {
       main .imagen-principal .contenido-imagen h3 {
         color: #fff;
         font-size: 5em;
-        margin-top: 3em; }
+        margin-top: 3.2em; }
       main .imagen-principal .contenido-imagen .link-instalaciones {
-        margin-top: 3.5em; }
+        margin-top: 4em; }
         main .imagen-principal .contenido-imagen .link-instalaciones a {
           border: solid #fff 1px;
           color: #fff;
@@ -71,7 +71,7 @@ main {
       max-width: 100%;
       height: 90vh; }
   main .secciones-secu-inicio {
-    margin: 2.5em 2.5em 2.5em 2.5em; }
+    margin: 2.5em; }
     main .secciones-secu-inicio h1 {
       text-align: center;
       font-size: 3em;
@@ -91,70 +91,86 @@ main {
         text-align: center; }
 
 /*INSTALACIONES*/
-main .instalaciones-sector h2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 20px 10px 20px 10px; }
-
-main .instalaciones-sector .card img {
-  width: 100%;
-  max-width: 100%;
-  height: 300px; }
+main .instalaciones-sector {
+  margin: 2em 2em 4em 2em; }
+  main .instalaciones-sector h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
+    font-size: 3em;
+    font-weight: 300; }
+  main .instalaciones-sector .card img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px; }
 
 main .servicios-sector {
-  margin: 50px 20px 50px 20px; }
+  margin: 2em 2em 4em 2em; }
   main .servicios-sector h2 {
     display: flex;
-    justify-content: start; }
+    justify-content: start;
+    font-size: 1.8em;
+    font-weight: 300; }
   main .servicios-sector .servicios-contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px; }
+    grid-gap: 2em; }
     main .servicios-sector .servicios-contenedor p {
       display: grid;
       align-items: center;
       justify-content: flex-start;
-      line-height: 1.7em; }
+      line-height: 1.8em; }
     main .servicios-sector .servicios-contenedor img {
       width: 100%;
       max-width: 100%;
-      height: 250px; }
+      height: 250px;
+      border-radius: 1em; }
 
 /*TORNEOS*/
-main h3 {
-  display: flex;
-  justify-content: center;
-  margin: 20px; }
-
-main .carrusel-torneo {
-  display: grid;
-  grid-template-columns: 1, 1fr;
-  background-color: black;
-  margin: 10px; }
-  main .carrusel-torneo img {
-    width: 100%;
-    max-width: 100%;
-    height: 500px;
-    padding: 10px; }
+main .carousel-inner img {
+  width: 100%;
+  max-width: 100%;
+  height: 84vh; }
 
 main .info-sobre-torneo {
-  background-color: white;
-  margin: 40px 0 40px 0; }
+  margin: 2em 2em 4em 2em; }
+  main .info-sobre-torneo h3 {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    font-size: 2em;
+    font-weight: 300; }
 
 /*SOBRE NOSOTROS*/
-main .sobre-nosotros {
-  margin: 30px; }
-  main .sobre-nosotros .encabezado-nosotros {
+main .encabezado-nosotros {
+  margin: 2em 2em 4em 2em; }
+  main .encabezado-nosotros h3 {
     display: flex;
-    align-items: center; }
-    main .sobre-nosotros .encabezado-nosotros p {
-      text-align: center; }
-  main .sobre-nosotros .quienes-somos {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
+    justify-content: start;
+    font-size: 1.8em;
+    font-weight: 300; }
+  main .encabezado-nosotros .sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em; }
+    main .encabezado-nosotros .sobre-nosotros ul {
+      display: grid;
+      align-items: center;
+      justify-content: flex-start;
+      line-height: 1.8em;
+      list-style-type: symbols(triangle);
+      list-style-position: inside; }
+    main .encabezado-nosotros .sobre-nosotros img {
+      width: 100%;
+      max-width: 100%;
+      height: 450px;
+      border-radius: 1em; }
+  main .encabezado-nosotros .mapa-nosotros {
+    margin-top: 4em;
+    border-top: #212529 solid 0.01em; }
+    main .encabezado-nosotros .mapa-nosotros iframe {
+      margin-top: 2em; }
 
 /*CONTACTOS*/
 main .contenedor-forms {
@@ -262,38 +278,42 @@ footer p {
       font-size: .9em; }
   /*INSTALACIONES*/
   main .servicios-sector {
-    margin: 25px 20px 25px 20px; }
+    margin: 1em; }
     main .servicios-sector h2 {
-      display: flex;
       justify-content: center; }
     main .servicios-sector .servicios-contenedor {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin: 1em 1em 5em 1em;
+      grid-gap: 0em; }
       main .servicios-sector .servicios-contenedor p {
         display: flex;
-        align-items: center;
         text-align: center;
-        line-height: 1.5em; }
+        line-height: 1.5em;
+        margin: 1em; }
   /*TORNEOS*/
-  main .carrusel-torneo {
-    margin: 5px; }
-    main .carrusel-torneo img {
-      height: 250px;
-      padding: 5px; }
+  main .carousel-inner img {
+    height: 81vh; }
+  main .info-sobre-torneo h3 {
+    font-size: 1.8em; }
   /*SOBRE NOSOTROS*/
-  main .sobre-nosotros .quienes-somos {
-    margin-top: 20px;
+  main .encabezado-nosotros h3 {
+    justify-content: center;
+    font-size: 1.5em; }
+  main .encabezado-nosotros .sobre-nosotros {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
-    main .sobre-nosotros .quienes-somos img {
-      width: 100%;
-      max-width: 100%;
-      height: 200px; }
-    main .sobre-nosotros .quienes-somos iframe {
-      width: 100%;
-      max-width: 100%;
-      height: 200px; }
+    grid-gap: 2em; }
+    main .encabezado-nosotros .sobre-nosotros ul {
+      justify-content: flex-start;
+      line-height: 1.5em; }
+      main .encabezado-nosotros .sobre-nosotros ul li {
+        margin: 1em;
+        text-align: center; }
+    main .encabezado-nosotros .sobre-nosotros img {
+      height: 400px; }
+  main .encabezado-nosotros .mapa-nosotros {
+    margin-top: 3em; }
   /*CONTACTO*/
   main .contenedor-forms .contacto {
     width: 70%; } }
@@ -311,7 +331,7 @@ footer p {
   main .secciones-inicio .imagen-principal img {
     height: 54vh; }
   main .secciones-secu-inicio {
-    margin: 2em 2em 2em 2em; }
+    margin: 2em; }
     main .secciones-secu-inicio h1 {
       font-size: 2em;
       margin-bottom: .5em; }
@@ -336,7 +356,7 @@ footer p {
         margin: 1em; }
       footer .footers .horarios-footers li {
         display: block;
-        margin: 1.5em;
+        margin: 1em;
         color: white;
         font-size: 1em;
         font-weight: 300; }
@@ -361,4 +381,35 @@ footer p {
     text-align: center;
     font-size: .7em;
     font-weight: 200;
-    color: white; } }
+    color: white; }
+  /*INSTALACIONES*/
+  main .instalaciones-sector h2 {
+    font-size: 2em; }
+  main .instalaciones-sector .card img {
+    height: 300px; }
+  main .servicios-sector h2 {
+    font-size: 1.8em; }
+  main .servicios-sector .servicios-contenedor p {
+    line-height: 1.5em; }
+  /*TORNEOS*/
+  main .carousel-inner img {
+    height: 60vh; }
+  main .info-sobre-torneo h3 {
+    font-size: 1.8em;
+    text-align: center; }
+  /*SOBRE NOSOTROS*/
+  main .encabezado-nosotros h3 {
+    justify-content: center;
+    font-size: 1.5em; }
+  main .encabezado-nosotros .sobre-nosotros {
+    grid-gap: 2em; }
+    main .encabezado-nosotros .sobre-nosotros ul {
+      justify-content: flex-start;
+      line-height: 1.5em; }
+      main .encabezado-nosotros .sobre-nosotros ul li {
+        margin: .7em;
+        text-align: center; }
+    main .encabezado-nosotros .sobre-nosotros img {
+      height: 300px; }
+  main .encabezado-nosotros .mapa-nosotros {
+    margin-top: 3em; } }

@@ -159,7 +159,6 @@ main .encabezado-nosotros {
       align-items: center;
       justify-content: flex-start;
       line-height: 1.8em;
-      list-style-type: symbols(triangle);
       list-style-position: inside; }
     main .encabezado-nosotros .sobre-nosotros img {
       width: 100%;
@@ -173,11 +172,24 @@ main .encabezado-nosotros {
       margin-top: 2em; }
 
 /*CONTACTOS*/
+main .encabezado-forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em 2em 1em 2em; }
+  main .encabezado-forms h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em; }
+  main .encabezado-forms p {
+    text-align: center; }
+
 main .contenedor-forms {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 2em; }
   main .contenedor-forms .contacto {
     color: black;
     width: 50%;
@@ -187,18 +199,25 @@ main .contenedor-forms {
     margin: 30px; }
     main .contenedor-forms .contacto h4 {
       text-align: center;
-      margin: 10px 0; }
+      margin: 10px 0;
+      font-weight: 400; }
     main .contenedor-forms .contacto .elementos-forms {
       margin: 45px; }
       main .contenedor-forms .contacto .elementos-forms input, main .contenedor-forms .contacto .elementos-forms textarea {
         color: black;
-        font-size: 15px;
+        font-size: 1em;
         padding: 10px 10px 10px 5px;
         display: block;
         width: 100%;
         border: none;
         border-bottom: 1px solid black; }
+    main .contenedor-forms .contacto .casillas {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
     main .contenedor-forms .contacto .button-forms button {
+      background-color: black;
+      color: white;
       display: block;
       width: 150px;
       height: 40px;
@@ -254,6 +273,8 @@ footer p {
 
 @media screen and (max-width: 768px) {
   /*INICIO*/
+  header .color-nav li:hover {
+    transform: scale(0); }
   main .secciones-inicio .imagen-principal .contenido-imagen h3 {
     color: #fff;
     font-size: 5em;
@@ -410,6 +431,4 @@ footer p {
         margin: .7em;
         text-align: center; }
     main .encabezado-nosotros .sobre-nosotros img {
-      height: 300px; }
-  main .encabezado-nosotros .mapa-nosotros {
-    margin-top: 3em; } }
+      height: 300px; } }

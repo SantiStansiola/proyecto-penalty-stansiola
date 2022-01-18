@@ -1,6 +1,18 @@
 @media screen and (max-width:768px) {
     /*INICIO*/
     
+
+    header {
+        .color-nav {
+            li { 
+                &:hover{
+                    transform: scale(0);
+                }
+            }
+        }
+    }
+
+
     main{
         .secciones-inicio{
             .imagen-principal{
@@ -292,9 +304,6 @@
                 img {
                     height: 300px;
                 }
-            }
-            .mapa-nosotros{
-                margin-top:3em;
             }
         }
     }

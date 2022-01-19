@@ -53,10 +53,10 @@
             grid-gap: 1.7em;
             .horarios-footers{
                 ul{
-                    margin: 2em;
+                    margin: $margin-xs;
                 }    
                 li{
-                    margin: 2em;
+                    margin: $margin-xs;
                     font-size: .9em;
                 }
             }
@@ -79,7 +79,7 @@
                 p {
                     display: flex;
                     text-align: center;
-                    line-height:1.5em;
+                    line-height:$line-height-xs;
                     margin: 1em;
                 }
             }
@@ -115,7 +115,7 @@
                 grid-gap: 2em;
                 ul{
                     justify-content: flex-start;
-                    line-height: 1.5em;
+                    line-height:$line-height-xs;
                     li{
                         margin: 1em;
                         text-align: center;
@@ -151,7 +151,7 @@
             .imagen-principal{
                 .contenido-imagen{
                     h3{
-                        font-size: 2em;
+                        font-size:$font-size-xs;
                         margin-top:4.5em;
                         }
                     .link-instalaciones{
@@ -169,9 +169,9 @@
             }
         }
         .secciones-secu-inicio{
-            margin: 2em;
+            margin:$margin-xs;
                 h1{
-                    font-size: 2em;
+                    font-size: $font-size-xs;
                     margin-bottom: .5em;
                     }
                 .imagenes-secundaria {
@@ -208,7 +208,7 @@
                     margin: 1em;
                     color: white;
                     font-size: 1em;
-                    font-weight: 300;
+                    font-weight: $font-weight-m;
                 }
             }
             .redes-footers{
@@ -248,7 +248,7 @@
     main{
         .instalaciones-sector{
             h2{
-                font-size: 2em;
+                font-size: $font-size-xs;
             }
             .card img {
                 height: 300px;
@@ -260,7 +260,7 @@
             }
             .servicios-contenedor {
                 p {
-                    line-height: 1.5em;
+                    line-height: $line-height-xs;
                 }
             }
         }
@@ -295,7 +295,7 @@
                 grid-gap: 2em;
                 ul{
                     justify-content: flex-start;
-                    line-height: 1.5em;
+                    line-height: $line-height-xs;
                     li{
                         margin: .7em;
                         text-align: center;
@@ -307,5 +307,4 @@
             }
         }
     }
-
 }    
